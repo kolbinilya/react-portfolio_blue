@@ -1,0 +1,35 @@
+svg{
+    width: 30px;
+    height: 30px;
+    fill: #4db5ff;
+}
+svg:hover{
+    fill: white;
+}
+
+nav{
+    background: rgba(0,0,0,0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    border-radius: 3rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+nav a{
+    background: transparent;
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+
+nav a.active svg{
+    fill: white;
+}
+
+nav a:not(:first-child){
+    margin-left: 10px;
+}
